@@ -1,3 +1,9 @@
+
+function getRandomInt(max){
+    return Math.floor(Math.random() * (max + 1));
+}
+
+
 function _run(parameters){
     var strObject = new StrategyObject(parameters.map, parameters.worm, parameters.strategy, parameters.commands, parameters.memory);
     run(strObject);
